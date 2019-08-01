@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 导航 */
+.nav {
+   background-color: #F5F5F5; 
+   
+}
+
+.container {
+    height: 36px;
+    width: 79px;
+    margin: 0 auto;
+}
+
+.wode {
+    height: 36px;
+    line-height: 36px;
+    /* text-align: center; */
+    padding: 0 5px;
+}
+
+a {
+    color: #6C6C6C;
+    font-size: 12px;
+}
+
+a:hover {
+    color: #FF8E00;
+}
+
+.container:hover .wode{
+    background-color: #fff;
+}
+
+.container:hover .option {
+   display: block;
+}
+
+.option {
+    width: 84px;
+    border: 1px solid #eee;
+    border-top: none;
+    height: 87px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.option-text {
+    padding: 5px;
+
+}
+.option-text:hover a{
+    color: #6C6C6C
+}
+.option-text:hover {
+    background-color: #f5f5f5;
+}

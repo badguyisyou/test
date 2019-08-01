@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        :focus {
+            /* 去除边框线 */
+            outline: none;
+        }
+
+        /* input:checked {
+            width: 100px;
+            height: 100px;
+        } */
+
+        input:checked+label {
+            color: red;
+        }
+
+        input {
+            width: 0px;
+            height: 0px;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- <input type="text">
+    <input type="radio" name="sex" id="">男
+    <input type="radio" name="sex" id="">女 -->
+
+    <input type="radio" name="gender" id="nan" checked/>
+    <label for="nan">网页</label>
+    <input type="radio" name="gender" id="nv"/>
+    <label for="nv">新闻</label>
+
+
+</body>
+
+</html>

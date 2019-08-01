@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* 导航start */
+.container {
+    height: 40px;
+    background-color: #333333;
+    padding-right: 61px;
+}
+
+.cart {
+    background-color: #424242;
+    height: 40px;
+    width: 120px;
+    float: right;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+
+}
+
+.cart-text {
+    color: #b0b0b0;
+    font-size: 12px;
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+.cart:hover .cart-text {
+    color: #FF6700;
+    background-color: #fff;
+}
+
+.cart:hover {
+    background-color: #fff;
+}
+
+.cart-box {
+    width: 316px;
+    height: 100px;
+    /* background-color: #f00; */
+    position: absolute;
+    right:0;
+    top:40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    font-size: 12px;
+    text-align: center;
+    line-height: 100px;
+    display: none;
+}
+
+.cart:hover .cart-box {
+    display: block;
+}
+
+
+
+/* 导航end */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局总结</title>
+</head>
+
+<body>
+    <p>
+        1. 块级盒子中文字垂直居中: line-height: 高度; padding: xpx 0;// 盒子不设置高度,同样适用于盒子垂直居中; 第三方校准
+    </p>
+    <p>
+        2. 文字水平居中: text-algin: center;
+    </p>
+    <p>
+        3. 兄弟盒子分离: margin(要注意外边距合并)
+    </p>
+    <p>
+        4. 父子盒子分离: ①父盒子设置padding,②子盒子设置margin(要注意外边距塌陷, 解决方式:给父盒子设置border/padding)
+    </p>
+    <p>
+        5. 使块级盒子在一行: ①设置浮动 ; ②将盒子设置为inline-block
+    </p>
+    <p>
+        6. 清除行内元素/行内块元素由于换行产生的空隙: ①使用浮动(推荐) ②取消换行(不推荐)
+    </p>
+    <p>
+        7. 盒子浮动后父盒子高度消失: ①给父盒子设置固定高度(不推荐);②在浮动元素后建一个空的盒子使用clear:both; ③给父盒子使用overflow:hidden;
+    </p>
+    <p>
+        8. 浮动布局常用无序列表ul: 取消标号使用list-style:none;
+    </p>
+    <p>
+        9. 盒模型:
+    </p>
+    IE盒子模型: width/height = border + padding + content <br/>
+    将盒子设置为IE盒子模型: box-sizing: border-box; <br/>
+    好处: 还可以固定盒子的宽高: 不随border和padding的改变而改变 <br/>
+    <img src="images/IE盒子模型.jpg" alt=""><br>
+    标准盒子模型: width/height = content <br/>
+    将盒子设置为标准盒子模型: box-sizing: content-box;// 默认 <br/>
+    好处: 可以通过改变border和padding来改变盒子的大小 <br/>
+    <img src="images/标准盒子模型.jpg" alt=""><br>
+
+
+
+
+
+</body>
+
+</html>

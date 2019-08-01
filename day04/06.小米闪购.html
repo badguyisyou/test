@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>小米闪购</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            height: 60px;
+        }
+        .container {
+            width: 234px;
+            height: 342px;
+            border-top: 2px solid #E53934;
+            background-color: #F1EDED;
+            margin: 100px auto;
+
+        }
+        .time {
+            text-align: center;
+            margin-top: 60px;
+            color: #E53934;
+            font-size: 18px;
+            /* font-weight: bold; */
+            /* font-family: "黑体"; */
+        }
+
+        .img-box {
+            width: 54px;
+            margin: 30px auto;
+        }
+        .content {
+            text-align: center;
+            color: #bbb;
+        }
+        .float {
+            float: left;
+        }
+        .daojishi {
+            
+            font-size: 22px;
+            width: 167px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .square {
+            width: 45px;
+            height: 45px;
+            background-color: #605751;
+            color: #fff;
+
+        }
+
+        .center {
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .maohao {
+            width: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 时间 -->
+        <div class="time">00:00 场</div>
+        <!-- 图片 -->
+        <div class="img-box">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563858838027&di=8a973ed15e7d58133ecb0b0c5aa961c9&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F00%2F69%2F15%2F7456ddc724cdd40.jpg" alt="">
+        </div>
+        <!-- 距离开始还有.... -->
+        <div class="content">距离开始还有</div>
+        <!-- 倒计时 -->
+        <div class="daojishi">
+            <div class="float square center">00</div>
+            <div class="float center maohao">:</div>
+            <div class="float square center">12</div>
+            <div class="float center maohao">:</div>
+            <div class="float square center">31</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .one {
+            height: 300px;
+            background-color: #f00;
+            /* 隐藏元素,不是删除 */
+            display: none;
+        }
+
+        .two {
+            background-color: #0f0;
+        }
+
+        /* 兄弟选择器  + : 只是下'一'个兄弟
+                      ~ : 所有兄弟
+        */
+        a:hover+.one {
+            /* 显示元素 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">显示one </a>
+        <div></div>
+        <div class="one"></div>
+
+        <div class="two"></div>
+    </div>
+</body>
+
+</html>

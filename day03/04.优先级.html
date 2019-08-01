@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            color: black !important;font-size: 20px !important;
+        }
+
+        .father {
+            font-size: 50px;
+            color: red;
+            text-decoration: underline;
+            line-height: 80px;
+        }
+
+        span {
+            color: blue;
+            /* text-decoration: underline; */
+        }
+
+        #father {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- !important>行内>id>类>标签>通配符>继承>默认样式 -->
+    <div id="father" class="father" style="color: coral !important;">
+        王健林
+        <span class="son">王思聪</span>
+
+    </div>
+
+
+</body>
+
+</html>

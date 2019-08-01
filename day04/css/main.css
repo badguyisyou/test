@@ -1,0 +1,110 @@
+/* 通用样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.float-left {
+    float: left;
+}
+/* 通用样式end */
+
+/* 盒子start */
+
+.container {
+    width: 180px;
+    height: 320px;
+    border: 1px solid #ededed;
+    margin: 100px auto;
+}
+/* 上半部分 start */
+img {
+    width: 180px;
+}
+
+/* 下半部分start */
+
+.bottom {
+    padding: 10px 8px;
+}
+
+/* 价格 */
+
+.price-number {
+    position: relative;
+}
+
+
+.price {
+    color: #FF4400;
+    font-weight: bolder;
+
+}
+
+.number {
+    font-size: 12px;
+    color: #888;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+/* 简介 */
+.Introduction {
+    margin: 8px 0;
+}
+.Introduction-text {
+    font-size: 12px;
+}
+
+/* 店名 地址 */
+.name-address {
+    font-size: 12px;
+    color: #888;
+    position: relative;
+}
+
+.line-box {
+    width: 10px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+
+.line {
+    display: block;
+    height: 2px;
+    width: 10px;
+    background-color: #FF4400;
+    margin-bottom: 2px;
+}
+.position-span {
+    position: relative;
+    top: -3px;
+    text-decoration: underline;
+}
+
+
+.address {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.shop-contact {
+    position: relative;
+    top: 10px;
+}
+
+.minibox {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+.second {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* 盒子end */

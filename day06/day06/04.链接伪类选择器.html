@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* a标签没有被使用时: 蓝色 带有下划线 */
+    /* 未被访问的链接 */
+    a:link {
+        color: red;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    /* 已被访问过的链接的样式 */
+    a:visited {
+        color: aqua;
+    }
+/* 鼠标悬停时a标签的样式 */
+    a:hover {
+        color: blue;
+        font-size: 50px;
+    }
+    
+    /* 被选中时的样式 */
+
+    a:active {
+        color: blueviolet;
+        text-decoration: underline;
+    }
+
+
+    </style>
+</head>
+<body>
+    <a href="https://www.taobao.com">淘宝</a>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .clear {
+            /* 最常用 both */
+            clear: both;
+        }
+
+        .father {
+            border: 1px solid #000;
+            /* overflow:hidden; */
+
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            /* 会造成父盒子的高度消失 */
+            float: left;
+        }
+
+        .red {
+            background-color: red;
+
+        }
+
+        .green {
+            background-color: green;
+
+        }
+
+        .yellow {
+            background-color: yellow;
+
+        }
+
+
+
+        .clear-after:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son red"></div>
+        <div class="son green"></div>
+        <div class="son yellow"></div>
+        <div class="son red"></div>
+        <div class="son green"></div>
+        <div class="son yellow"></div>
+        <div class="son red"></div>
+        <div class="son green"></div>
+        <div class="son yellow"></div>
+        <div class="clear-after"></div>
+    </div>
+</body>
+
+</html>

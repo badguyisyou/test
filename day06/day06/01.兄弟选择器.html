@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        p {
+            width: 100px;
+            height: 100px;
+        }
+        .Big-brother {
+            background-color: aqua;
+        }
+        .Big-brother~div {
+            border: 1px solid #000;
+        }
+
+        .Big-brother+div {
+            background-color: green;
+        }
+
+        .Big-brother~.red {
+            border: 1px solid #f00;
+        }
+
+        .Big-brother+.blue {
+            background-color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        +: 代表选择下面的第一个兄弟,相邻的标签且符合条件
+        ~: 选中下面的所有兄弟 是兄弟且符合条件
+
+
+
+     -->
+
+     <div></div>
+     <div class="Big-brother"></div>
+     <p></p>
+     <div class="red"></div>
+     <div class="blue"></div>
+     <div class="red"></div>
+     <div></div>
+</body>
+</html>

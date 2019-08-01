@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .float {
+            float: left;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .w {
+            width: 1000px;
+            /* background-color: #f00; */
+            margin: 0 auto;
+        }
+
+        .container {
+            border-left: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+        .head {
+            
+            background-color: #777777;
+        }
+        .li-style {
+            padding: 20px 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .li-1 {
+            background-color: #4CAF50;
+        }
+
+        .main {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .main-left {
+            width: 20%;
+            /* background-color: green; */
+            margin: 0 30px 0 20px;
+        }
+        
+
+        .left-box {
+            height: 40px;
+            line-height: 40px;
+            background-color: #EEE;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        .div-2 {
+            color: #fff;
+            background-color: #008CBA;
+        }
+
+
+        .main-right {
+            width: 72%;
+            background-color: #fff;
+        }
+
+        .right-title {
+            height: 135px;
+            background-color: #2196F3;
+            color: #fff;
+            text-align: center;
+            line-height: 135px;
+        }
+
+        .right-h1-margin {
+            margin: 35px 0;
+        }
+
+        .right-p-margin {
+            margin-bottom: 20px;
+        }
+
+        .foot {
+            padding:30px 0 30px 20px;
+            background-color: #777777;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w container">
+        <div class="head">
+            <ul>
+                <li class="float li-style li-1">主页</li>
+                <li class="float li-style">新闻</li>
+                <li class="float li-style">联系我们</li>
+                <li class="float li-style">关于我们</li>
+                <li class="clear"></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="main-left float">
+                <div class="left-box">HTML5</div>
+                <div class="left-box div-2">CSS</div>
+                <div class="left-box">JavaScript</div>
+                <div class="left-box">Node.js</div>
+                <div class="left-box">Vue.js</div>
+                <div class="left-box">React.js</div>
+                <div class="left-box">小程序</div>
+            </div>
+            <div class="main-right float">
+                <h1 class="right-title">这是标题</h1>
+                <div>
+                    <h1 class="right-h1-margin">HTML5</h1>
+                    <p class="right-p-margin">HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。HTML 的上一个版本诞生于 1999 年。自从那以后，Web 世界已经经历了巨变。
+                    </p>
+                    <p>HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="foot">
+            底部文本
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        mark {
+            background-color: aqua;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" list="car">
+    <datalist id="car">
+        <option value="BMW"></option>
+        <option value="0000"></option>
+        <option value="B"></option>
+        <option value="BYD"></option>
+
+    </datalist>
+
+    月份显示：
+    <time datetime="2014-3-21">2014年3月21日</time>
+
+    具体时间显示（采用24小时制）：
+    <time datetime="16:30">下午4点半</time>
+
+    结合显示（中间隔一个空格）：
+    <time datetime="2018-3-21 16:30">2018-3-21 16:30</time>
+    <span>2018-3-21 16:30</span>
+
+    <p>百度百科是一部内容开放、自由的网络
+        <mark>百科</mark>
+        全书,旨在创造一个涵盖所有领域知识,服务所有互联网用户的中文知识性<mark>百科</mark>全书。在这里你可以参与词条编辑,分享贡献你的知识</p>
+    <!-- <0 ==> 0  >max ==> max -->
+    <progress value="-500" max="100"></progress>
+    <form action="">
+        <input type="email" name="user_email"  autocomplete="on" autofocus required/>
+        <!-- 电话: -->
+        <input type="tel" name="tel" id="" placeholder="请输入电话号码">
+        <input type="number" name="number" id="" min="1" max="11">
+        <input type="url" name="user_url"  autofocus/>
+        <input type="range" name="range" id="">
+        <input type="date" name="date" id="">
+        <input type="submit">
+    </form>
+
+    <video controls autoplay width="500" height="300" loop>
+        <!-- <source src="src/mov_bbb.mp4"/> -->
+        <source src="src/mov_bbb.ogg"/>
+        你的浏览器不支持视频播放
+    </video>
+
+    <audio src="src/loveyou.mp3" controls></audio>
+</body>
+
+</html>

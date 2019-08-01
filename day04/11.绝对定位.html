@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位</title>
+    <style>
+
+        .grandpa {
+            width: 500px;
+            height: 500px;
+            background-color: violet;
+            /* 不能用于绝对定位 */
+            margin: 0 auto;
+            /* position: relative; */
+            position: absolute;
+            left: 50%;
+            margin-left: -250px;
+        }
+
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            padding-top: 1px;
+            margin: 0 auto;
+            /* position: relative; */
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: red;
+
+        }
+
+        .green {
+            background-color: green;
+            /* 绝对定位: 原来的位置会被后面的元素占据 */
+            /* 在祖先没有定位时 就相对于body来定位  如果祖先元素有定位则相对于最近的一个有定位的祖先元素进行定位 */
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .blue {
+            width: 150px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandpa">
+            <div class="father">
+                    <div class="son red"></div>
+                    <div class="son green"></div>
+                    <div class="son blue"></div>
+                </div>
+
+    </div>
+   
+</body>
+
+</html>

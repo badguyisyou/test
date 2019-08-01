@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            padding-top: 1px;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;            
+        }
+        .red {
+            background-color: red;
+            /* 相对于本身的位置进行定位 */
+            position: relative;
+            /* 偏移量不会影响其他元素 , 相对于本身的位置进行偏移 */
+            top: 30px;
+            /* left>right
+             */
+            left: 60px;
+            right: 60px;
+            margin: 70px;
+        }
+        .green {
+            background-color: green;
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+        .blue {
+            background-color: blue;
+        }
+
+
+    
+    
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son red"></div>
+        <div class="son green"></div>
+        <div class="son blue"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .f1 {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+
+        /* .f1 div{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        } */
+
+        .f1 span {
+            color: #fff;
+        }
+
+        .f3 span {
+            color: #000;
+        }
+
+        .f2>span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        后代选择器: 父级/祖先级选择器 子元素/后代选择器
+        只要是后代就可以选中
+        子元素选择器:   父级>子
+         -->
+
+    <div>
+        <div><span></span></div>
+    </div>
+    <div class="f1">
+        <div class="f2">
+            <div class="f3">
+                <div class="s1">
+                    <span>123</span>
+                </div>
+                <span>234</span>
+            </div>
+            <span>345</span>
+        </div>
+    </div>
+</body>
+
+</html>
